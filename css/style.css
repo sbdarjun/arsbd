@@ -8939,7 +8939,11 @@ h1, h2, h3, h4, h5,
   height: 285px;
   margin-bottom: 30px;
   position: relative;
+  background-repeat: none;
   z-index: 0; }
+  /* .project.my-img{
+    height: auto;
+  } */
   .project.img-2 {
     height: 600px; }
     @media (max-width: 767.98px) {
@@ -8962,7 +8966,28 @@ h1, h2, h3, h4, h5,
           opacity: 1; }
           .project.img-2 .text span {
             color: rgba(255, 255, 255, 0.8); } }
-  .project .overlay {
+  .myimg1:hover{
+    opacity: 0.5;
+  }
+  .mytext1{
+    position: absolute;
+    display: block;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    opacity: 0;
+    transition: all .2s ease-in-out;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .project:hover .mytext1{
+    opacity: 1;
+    background: #ffbd39;
+  }
+
+            .project .overlay {
     position: absolute;
     top: 0;
     left: 0;
