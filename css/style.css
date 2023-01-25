@@ -12908,6 +12908,11 @@ h5,
   }
 }
 
+.myimg1{
+    height: 100%;
+    width: 100%;
+}
+
 .myimg1:hover {
   opacity: 0.5;
 }
@@ -12953,6 +12958,15 @@ h5,
   .project .overlay {
     opacity: .2;
   }
+  .myimg1 {
+    height: 60%;
+  }
+}
+
+@media (max-width: 355px) {
+    .myimg1 {
+        height: 50%;
+    }
 }
 
 .project .text {
